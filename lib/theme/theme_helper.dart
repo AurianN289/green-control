@@ -73,6 +73,15 @@ class LightCodeColors {
   Color get colorFF7575 => Color(0xFF757575);
   Color get colorFFE0E0 => Color(0xFFE0E0E0);
 
+  // New Colors
+  Color get colorFFD94D => Color(0xFFD94D4D);
+  Color get colorFFA1A1 => Color(0xFFA1A1A1);
+  Color get colorFF1E7E => Color(0xFF1E7E34);
+  Color get colorFFE8F7 => Color(0xFFE8F7EE);
+  Color get colorFF9462 => Color(0xFF946200);
+  Color get colorFFFFF7 => Color(0xFFFFF7D6);
+  Color get colorFFFFCC => Color(0xFFFFCC00);
+
   // Color Shades - Each shade has its own dedicated constant
   Color get grey200 => Colors.grey.shade200;
   Color get grey100 => Colors.grey.shade100;

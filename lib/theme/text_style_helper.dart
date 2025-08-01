@@ -12,6 +12,21 @@ class TextStyleHelper {
     return _instance!;
   }
 
+  // Display Styles
+  // Large text styles for major headings
+
+  TextStyle get display32Bold => TextStyle(
+        fontSize: 32.fSize,
+        fontWeight: FontWeight.bold,
+        color: appTheme.colorFF2F7D,
+      );
+
+  TextStyle get display31Bold => TextStyle(
+        fontSize: 31.fSize,
+        fontWeight: FontWeight.bold,
+        color: appTheme.colorFF2F7D,
+      );
+
   // Title Styles
   // Medium text styles for titles and subtitles
 
@@ -27,6 +42,13 @@ class TextStyleHelper {
         fontFamily: 'Roboto',
       );
 
+  TextStyle get title16Bold => TextStyle(
+        fontSize: 16.fSize,
+        fontWeight: FontWeight.bold,
+        color: const Color(
+            0xFFA1A1A1), // Modified: Replaced unavailable theme color
+      );
+
   // Body Styles
   // Standard text styles for body content
 
@@ -34,6 +56,12 @@ class TextStyleHelper {
         fontSize: 15.fSize,
         fontWeight: FontWeight.w400,
         color: appTheme.colorFF7575,
+      );
+
+  TextStyle get body15Bold => TextStyle(
+        fontSize: 15.fSize,
+        fontWeight: FontWeight.bold,
+        color: appTheme.colorFF4444,
       );
 
   TextStyle get body14 => TextStyle(
@@ -61,6 +89,12 @@ class TextStyleHelper {
   TextStyle get body12 => TextStyle(
         fontSize: 12.fSize,
         color: appTheme.colorFF8888,
+      );
+
+  TextStyle get body12Bold => TextStyle(
+        fontSize: 12.fSize,
+        fontWeight: FontWeight.bold,
+        color: appTheme.colorFF2F7D,
       );
 
   // Other Styles

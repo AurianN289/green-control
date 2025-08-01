@@ -24,6 +24,12 @@ class AppNavigationScreen extends StatelessWidget {
                         onTapScreenTitle: () =>
                             onTapScreenTitle(context, AppRoutes.loginScreen),
                       ),
+                      _buildScreenTitle(
+                        context,
+                        screenTitle: "Android Compact - Two",
+                        onTapScreenTitle: () => onTapScreenTitle(
+                            context, AppRoutes.greenControlDashboardScreen),
+                      ),
                     ],
                   ),
                 ),
