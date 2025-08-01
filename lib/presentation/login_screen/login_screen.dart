@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../core/app_export.dart';
 import '../../widgets/custom_button.dart';
 import '../../widgets/custom_image_view.dart';
@@ -220,7 +219,6 @@ class LoginScreen extends StatelessWidget {
 
     if (email.isNotEmpty && password.isNotEmpty) {
       print('Login attempt: email=$email, password=$password');
-      // Add login logic here
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
             content: Text('Login functionality would be implemented here')),
@@ -230,16 +228,13 @@ class LoginScreen extends StatelessWidget {
 
   void _handleForgotPassword() {
     print('Forgot password clicked');
-    // Add forgot password logic here
   }
 
   void _handleGoogleSignIn() {
     print('Google sign in clicked');
-    // Add Google sign in logic here
   }
 
   void _handleCreateAccount() {
     print('Create account clicked');
-    // Add create account logic here
   }
 }

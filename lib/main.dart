@@ -6,7 +6,6 @@ import 'core/app_export.dart';
 var globalMessengerKey = GlobalKey<ScaffoldMessengerState>();
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  // 🚨 CRITICAL: Device orientation lock - DO NOT REMOVE
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   runApp(MyApp());
 }
@@ -21,7 +20,6 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           initialRoute: AppRoutes.initialRoute,
           routes: AppRoutes.routes,
-          // 🚨 CRITICAL: NEVER REMOVE OR MODIFY
           builder: (context, child) {
             return MediaQuery(
               data: MediaQuery.of(
@@ -30,7 +28,6 @@ class MyApp extends StatelessWidget {
               child: child!,
             );
           },
-          // 🚨 END CRITICAL SECTION
         );
       },
     );

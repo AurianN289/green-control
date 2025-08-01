@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../core/app_export.dart';
 
-/// A helper class for managing text styles in the application
 class TextStyleHelper {
   static TextStyleHelper? _instance;
 
@@ -11,9 +10,6 @@ class TextStyleHelper {
     _instance ??= TextStyleHelper._();
     return _instance!;
   }
-
-  // Display Styles
-  // Large text styles for major headings
 
   TextStyle get display32Bold => TextStyle(
         fontSize: 32.fSize,
@@ -26,9 +22,6 @@ class TextStyleHelper {
         fontWeight: FontWeight.bold,
         color: appTheme.colorFF2F7D,
       );
-
-  // Title Styles
-  // Medium text styles for titles and subtitles
 
   TextStyle get title22Bold => TextStyle(
         fontSize: 22.fSize,
@@ -46,11 +39,8 @@ class TextStyleHelper {
         fontSize: 16.fSize,
         fontWeight: FontWeight.bold,
         color: const Color(
-            0xFFA1A1A1), // Modified: Replaced unavailable theme color
+            0xFFA1A1A1),
       );
-
-  // Body Styles
-  // Standard text styles for body content
 
   TextStyle get body15Regular => TextStyle(
         fontSize: 15.fSize,
@@ -96,9 +86,6 @@ class TextStyleHelper {
         fontWeight: FontWeight.bold,
         color: appTheme.colorFF2F7D,
       );
-
-  // Other Styles
-  // Miscellaneous text styles without specified font size
 
   TextStyle get bodyTextInter => TextStyle(
         fontFamily: 'Inter',

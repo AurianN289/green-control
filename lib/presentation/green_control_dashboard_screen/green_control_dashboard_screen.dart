@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../core/app_export.dart';
 import '../../widgets/custom_image_view.dart';
 import './widgets/monitoring_card_widget.dart';
@@ -10,7 +9,6 @@ class GreenControlDashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Modified: Added missing opening parenthesis
       backgroundColor: Colors.white,
       appBar: _buildAppBar(context),
       body: SingleChildScrollView(
@@ -31,23 +29,22 @@ class GreenControlDashboardScreen extends StatelessWidget {
               SizedBox(height: 24.h),
               _buildStatusCards(context),
               SizedBox(
-                  height: 24.h), // Modified: Added missing height parameter
+                  height: 24.h),
               _buildDivider(),
             ],
           ),
         ),
       ),
-    ); // Modified: Fixed closing parentheses structure
+    );
   }
 
   PreferredSizeWidget _buildAppBar(BuildContext context) {
     return AppBar(
       backgroundColor: Color(0xFFF5F5F5),
       elevation: 0,
-      toolbarHeight: 72.h, // Modified: Changed 'height' to 'toolbarHeight'
+      toolbarHeight: 72.h,
       leading: GestureDetector(
         onTap: () {
-          // Handle menu toggle
         },
         child: Container(
           padding: EdgeInsets.all(12.h),
@@ -67,7 +64,6 @@ class GreenControlDashboardScreen extends StatelessWidget {
       actions: [
         GestureDetector(
           onTap: () {
-            // Handle profile tap
           },
           child: Container(
             padding: EdgeInsets.all(12.h),
@@ -88,7 +84,6 @@ class GreenControlDashboardScreen extends StatelessWidget {
       Expanded(
           child: GestureDetector(
               onTap: () {
-                // Handle view history
               },
               child: Container(
                   height: 39.h,
@@ -111,7 +106,6 @@ class GreenControlDashboardScreen extends StatelessWidget {
       Expanded(
           child: GestureDetector(
               onTap: () {
-                // Handle manual mode
               },
               child: Container(
                   height: 39.h,
@@ -137,7 +131,6 @@ class GreenControlDashboardScreen extends StatelessWidget {
       Expanded(
           child: GestureDetector(
               onTap: () {
-                // Handle configure limits
               },
               child: Container(
                   height: 39.h,
@@ -160,7 +153,6 @@ class GreenControlDashboardScreen extends StatelessWidget {
       Expanded(
           child: GestureDetector(
               onTap: () {
-                // Handle pause automation
               },
               child: Container(
                   height: 39.h,
