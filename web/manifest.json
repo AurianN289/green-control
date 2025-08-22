@@ -1,6 +1,6 @@
 {
-    "name": "n_289_s_application",
-    "short_name": "n_289_s_application",
+    "name": "green_control",
+    "short_name": "green_control",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
